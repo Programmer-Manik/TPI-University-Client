@@ -1,11 +1,8 @@
+import MainLayout from "./components/layout/MainLayout"
 
 
 function App() {
-  return (
-    <>
-      <h1>manik</h1>
-    </>
-  )
+  return <MainLayout />
 }
 
 export default App
