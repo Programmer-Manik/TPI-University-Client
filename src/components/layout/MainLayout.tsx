@@ -1,10 +1,10 @@
 import { Layout, Menu, MenuProps } from "antd";
-import {
-  UploadOutlined,
-  UserOutlined,
-  VideoCameraOutlined,
-} from "@ant-design/icons";
-import { createElement } from "react";
+// import {
+//   UploadOutlined,
+//   UserOutlined,
+//   VideoCameraOutlined,
+// } from "@ant-design/icons";
+// import { createElement } from "react";
 
 const { Header, Content, Footer, Sider } = Layout;
 
@@ -49,7 +49,7 @@ const MainLayout = () => {
         <div style={{ color: "white", textAlign: "center",
          height:'4rem', display:'flex', 
          justifyContent:'center',
-         justifyItems:'center',
+         alignItems:'center'
       }}>
           <h1>TPI UNI..</h1>
         </div>
