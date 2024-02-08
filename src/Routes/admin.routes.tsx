@@ -5,10 +5,10 @@ import CreateFaculty from "../pages/admin/CreateFaculty";
 import CreateStudent from "../pages/admin/CreateStudent";
 import { NavLink } from "react-router-dom";
 
-type tRoute = {
-  path: string;
-  element: ReactNode;
-};
+// type tRoute = {
+//   path: string;
+//   element: ReactNode;
+// };
 
 type tSidebarItem = {
   key: string;
@@ -16,7 +16,7 @@ type tSidebarItem = {
   children?: tSidebarItem[];
 };
 
-const adminPaths = [
+export const adminPaths = [
   {
     name: "Dashboard",
     path: "dashboard",
@@ -69,25 +69,25 @@ export const adminSidebarItems = adminPaths.reduce(
 );
 
 //programmatically way
-export const AdminRoutes = adminPaths.reduce((acc: tRoute[], item) => {
-  if (item.path && item.element) {
-    acc.push({
-      path: item.path,
-      element: item.element,
-    });
-  }
+// export const AdminRoutes = adminPaths.reduce((acc: tRoute[], item) => {
+//   if (item.path && item.element) {
+//     acc.push({
+//       path: item.path,
+//       element: item.element,
+//     });
+//   }
 
-  if (item.children) {
-    item.children.forEach((child) => {
-      acc.push({
-        path: child.path,
-        element: child.element,
-      });
-    });
-  }
+//   if (item.children) {
+//     item.children.forEach((child) => {
+//       acc.push({
+//         path: child.path,
+//         element: child.element,
+//       });
+//     });
+//   }
 
-  return acc;
-}, []);
+//   return acc;
+// }, []);
 
 //hard code way
 // export const adminPaths = [
