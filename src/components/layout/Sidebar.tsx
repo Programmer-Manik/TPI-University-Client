@@ -16,6 +16,7 @@ const userRole = {
 
 const Sidebar = () => {
   const user = useAppSelector(selectCurrentUser);
+  
 
   let sidebarItems;
 
