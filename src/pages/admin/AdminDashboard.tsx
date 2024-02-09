@@ -1,7 +1,7 @@
 const AdminDashboard = () => {
   return (
     <div>
-      <h2>Welcome to the AdminDashboard page</h2>
+      <h1> This is AdminDashboard component </h1>
     </div>
   );
 };

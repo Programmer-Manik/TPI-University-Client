@@ -1,7 +1,7 @@
 const StudentDashboard = () => {
   return (
     <div>
-      <h2>Welcome to the StudentDashboard page</h2>
+      <h1> This is StudentDashboard component </h1>
     </div>
   );
 };

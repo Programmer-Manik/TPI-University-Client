@@ -1,7 +1,7 @@
 const CreateFaculty = () => {
   return (
     <div>
-      <h2>Welcome to the CreateFaculty page</h2>
+      <h1> This is CreateFaculty component </h1>
     </div>
   );
 };

@@ -1,7 +1,7 @@
 const Register = () => {
   return (
     <div>
-      <h2>Welcome to the Register page</h2>
+      <h1> This is Register component </h1>
     </div>
   );
 };
