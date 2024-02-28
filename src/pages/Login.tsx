@@ -17,7 +17,10 @@ const Login = () => {
   //     password: 'admin123',
   //   },
   // });
-  
+  const defaultValues = {
+    userId: 'A-0002',
+    password: 'admin123',
+  };
   const [login, ] = useLoginMutation();
   const onSubmit = async (data :FieldValues) => {
    const toastId = toast.loading('loading in')
