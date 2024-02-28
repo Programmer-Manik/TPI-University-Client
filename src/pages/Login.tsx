@@ -4,7 +4,6 @@ import { useLoginMutation } from '../redux/features/auth/authApi';
 import { useAppDispatch } from '../redux/hooks';
 import { setUser } from '../redux/features/auth/authSlice';
 import { verifyToken } from '../utils/verifyToken';
-
 const Login = () => {
   const dispatch = useAppDispatch();
   const { register, handleSubmit } = useForm({
@@ -13,21 +12,16 @@ const Login = () => {
       password: 'admin123',
     },
   });
-
-  const [login, { error }] = useLoginMutation();
-
+  const [login, ] = useLoginMutation();
   const onSubmit = async (data) => {
     const userInfo = {
       id: data.userId,
       password: data.password,
     };
-
     const res = await login(userInfo).unwrap();
     const user = verifyToken(res.data.accessToken);
-
     dispatch(setUser({ user: user, token: res.data.accessToken }));
   };
-
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
       <div>

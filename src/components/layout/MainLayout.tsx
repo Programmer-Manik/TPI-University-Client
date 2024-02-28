@@ -1,16 +1,7 @@
-import { Layout, Menu, MenuProps } from 'antd';
-import {
-  UploadOutlined,
-  UserOutlined,
-  VideoCameraOutlined,
-} from '@ant-design/icons';
-import { createElement } from 'react';
-import { NavLink, Outlet } from 'react-router-dom';
-import { adminPaths, adminSidebarItems } from '../../routes/admin.routes';
-import { sidebarItemsGenerator } from '../../utils/sidebarItemsGenerator';
+import { Layout,} from 'antd';
+import {  Outlet } from 'react-router-dom';
 import Sidebar from './Sidebar';
-const { Header, Content, Footer, Sider } = Layout;
-
+const { Header, Content,  } = Layout;
 const MainLayout = () => {
   return (
     <Layout style={{ height: '100vh' }}>
